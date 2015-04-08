@@ -12,22 +12,25 @@
 2. Remove old git into
 	* cd /your/cloned/repo/directory
 	* rm -rf .git
-3. Migrate DB locally
+3. Change DB info
+	* Edit /config/database.yml
+	* Change TemplateSite to reflect your application name
+4. Migrate DB locally
 	* rake db:migrate
-4. Install Simple Form Bootstrap
+5. Install Simple Form Bootstrap
 	* rails g simple_form:install --bootstrap
-5. Precompile assets (for Heroku)
+6. Precompile assets (for Heroku)
 	* rake assets:precompile
-6. Initialize new git repo
+7. Initialize new git repo
 	* git init
-7. Make a inital commit
+8. Make a inital commit
 	* git add .
 	*  git commit -m "Initial"
-8. Create Heroku app
+9. Create Heroku app
 	* heroku create
-9. Push to Heroku
+10. Push to Heroku
 	* git push heroku master
-10. Migrate DB
+11. Migrate DB
 	* heroku run rake db:migrate
 
 
