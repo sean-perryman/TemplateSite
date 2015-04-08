@@ -16,6 +16,7 @@
 	* Edit /config/database.yml
 	* Change TemplateSite to reflect your application name
 4. Migrate DB locally
+	* rake db:create
 	* rake db:migrate
 5. Install Simple Form Bootstrap
 	* rails g simple_form:install --bootstrap
