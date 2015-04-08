@@ -1,0 +1,3 @@
+Template Site
+
+- This is just a simple template I've created after finding I use the same stuff in almost every Rails project.
